@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Account</title>
+  </head>
+  <body>
+    <h1>Account</h1>
+
+    <label for="username">Name:</label>
+    <br />
+    <input
+      type="text"
+      id="username"
+      value="Jose Annunziato"
+      placeholder="John Doe"
+      title="Please enter your name"
+    />
+    <br />
+
+    <label for="bio">Bio</label>
+    <br />
+    <textarea
+      id="bio"
+      placeholder="I like to ski and play Lego"
+      cols="40"
+      rows="10"
+    >
+Northeastern student. Learning WebDev</textarea
+    >
+    <br />
+
+    <label for="">Married:</label>
+    <br />
+    <input id="married-yes" type="radio" name="married" />
+    <label for="married-yes">Yes</label>
+    <input id="married-no" type="radio" name="married" />
+    <label for="married-no">No</label>
+    <br />
+
+    <label for="">Marital Status</label>
+    <br />
+    <select name="" id="">
+      <option value="MARRIED">Married</option>
+      <option value="SINGLE">Single</option>
+      <option value="WIDOW">Widow</option>
+    </select>
+    <br />
+
+    <label for="">Courses Teaching This Semester</label>
+    <br />
+    <input type="checkbox" />CS4550<br />
+    <input type="checkbox" />CS5610<br />
+    <input type="checkbox" />CS5200<br />
+    <input type="checkbox" />CS3200<br />
+    <input type="checkbox" />CS5500
+    <br />
+
+    <label for="">Email</label>
+    <input type="email" />
+    <br />
+
+    <label for="">Years teaching</label>
+    <input type="number" min="100" max="1000" />
+    <br />
+
+    <label for="">Phone</label>
+    <input type="tel" />
+    <br />
+
+    <label for="">Date of Birth</label>
+    <input type="date" value="2023-01-17" min="2023-01-10" max="2023-01-23" />
+    <br />
+
+    <button>Submit</button>
+    <button>Cancel</button>
+  </body>
+</html>
