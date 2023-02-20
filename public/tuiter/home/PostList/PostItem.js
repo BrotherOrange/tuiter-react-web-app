@@ -1,7 +1,7 @@
 const PostItem = (post) => {
   if (post.previewTitle === '') {
     return `
-    <div class="list-group-item wd-home-post">
+    <div class="list-group-item wd-home-post bg-transparent">
       <div>
         <img class="wd-home-img" src="${post.icon}"></img>
       </div>
@@ -33,7 +33,7 @@ const PostItem = (post) => {
   `;
   }
   return `
-    <div class="list-group-item wd-home-post">
+    <div class="list-group-item wd-home-post bg-transparent">
       <div>
         <img class="wd-home-img" src="${post.icon}"></img>
       </div>
@@ -51,9 +51,11 @@ const PostItem = (post) => {
         <div class="wd-home-text">
           ${post.text}
         </div>
-        <div>
-          <img class="wd-home-preview-img img-fluid rounded" src="${post.preview}"></img>
-          <div class="wd-home-preview-post rounded">
+        <div class="list-group rounded">
+          <div class="list-group-item bg-transparent">
+            <img class="wd-home-preview-img img-fluid" src="${post.preview}"></img>
+          </div>
+          <div class="wd-home-preview-post list-group-item bg-transparent">
             <div class="wd-home-preview-title">
               ${post.previewTitle}
             </div>

@@ -46,13 +46,11 @@
 }
 
 .wd-home-preview-img {
-  border: solid 1px rgb(110, 118, 125);
   object-fit: cover;
   width: 100%;
 }
 
 .wd-home-preview-post {
-  border: solid 1px rgb(110, 118, 125);
   border-top: none;
   padding: 5px;
 }
