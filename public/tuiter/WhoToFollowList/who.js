@@ -1,0 +1,22 @@
+export default [
+  {   avatarIcon: 'https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg',
+      userName: 'Java',
+      handle: '@Java',
+  },
+  {   avatarIcon: 'https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy',
+      userName: 'Relativity Space',
+      handle: '@relativityspace',
+  },
+  {   avatarIcon: 'https://static.cdnlogo.com/logos/v/11/virgin.svg',
+      userName: 'Virgin Galactic',
+      handle: '@virgingalactic',
+  },
+  {   avatarIcon: 'http://www.nasa.gov/sites/default/files/images/nasaLogo-570x450.png',
+      userName: 'NASA',
+      handle: '@NASA',
+  },
+  {   avatarIcon: 'https://www.carlogos.org/car-logos/tesla-logo-2200x2800.png',
+      userName: 'Tesla',
+      handle: '@Tesla',
+  }
+];

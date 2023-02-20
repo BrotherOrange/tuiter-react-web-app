@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+.wd-rounded-corners-all-around {
+  height: 40px;
+  border-radius: 50px;
+  width: 100%;
+  border-left: 0;
+}
+
 .wd-nav {
   display: flex;
   justify-content: left;
@@ -14,11 +21,75 @@
   display: inline-block;
 }
 
-.wd-rounded-corners-all-around {
-  height: 40px;
-  border-radius: 50px;
+.wd-home-hr {
+  border-bottom: solid 1px rgb(110, 118, 125);
+}
+
+.wd-home-img {
+  object-fit: cover;
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.wd-home-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 5px 10px 5px;
+}
+
+.wd-home-button {
+  border: none;
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-home-preview-img {
+  border: solid 1px rgb(110, 118, 125);
+  object-fit: cover;
   width: 100%;
-  border-left: 0;
+}
+
+.wd-home-preview-post {
+  border: solid 1px rgb(110, 118, 125);
+  border-top: none;
+  padding: 5px;
+}
+
+.wd-home-preview-title {
+  color: white;
+}
+
+.wd-home-post {
+  display: flex;
+  justify-content: left;
+}
+
+.wd-home-username {
+  display: inline-block;
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+  padding-bottom: 3px;
+  padding-top: 5px;
+}
+
+.wd-home-text {
+  color: white;
+  padding-bottom: 3px;
+  padding-top: 5px;
+}
+
+.wd-home-author {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+}
+
+.wd-home-time {
+  display: inline-block;
+  font-size: 13px;
+  color: rgb(110, 118, 125);
 }
 
 .wd-main {
