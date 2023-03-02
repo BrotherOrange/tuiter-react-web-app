@@ -1,0 +1,20 @@
+[
+  {
+    "_id": 123,
+    "userName": "NASA",
+    "handle": "NASA",
+    "avatarIcon": "http://www.nasa.gov/sites/default/files/images/nasaLogo-570x450.png"
+  },
+  {
+    "_id": 234,
+    "userName": "Tesla",
+    "handle": "tesla",
+    "avatarIcon": "https://assets.materialup.com/uploads/922c35bd-940d-4f26-bbd5-ff8b7075f53b/preview.jpg"
+  },
+  {
+    "_id": 345,
+    "userName": "SpaceX",
+    "handle": "SpaceX",
+    "avatarIcon": "https://asset.brandfetch.io/id2g3lee9x/idXX_e5k_s.jpeg"
+  }
+]

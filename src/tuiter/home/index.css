@@ -1,0 +1,184 @@
+.wd-tabs li {
+  display: inline;
+}
+
+.wd-tabs {
+  padding-left: 0px;
+}
+
+.wd-selected {
+  border-bottom: 2px blue solid;
+  padding-bottom: 20px;
+}
+
+.wd-nudge-up {
+  bottom: 18px;
+  left: 25px;
+}
+
+.wd-bottom-2 {
+  bottom: 2px;
+}
+
+.wd-bottom-4 {
+  bottom: 4px;
+}
+
+.wd-tweet-button {
+  border-radius: 20px;
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+}
+
+.wd-rounded-corners-all-around {
+  height: 40px;
+  border-radius: 50px;
+  width: 100%;
+  border-left: 0;
+}
+
+.wd-nav {
+  display: flex;
+  justify-content: left;
+}
+
+.wd-nav-text {
+  display: inline-block;
+}
+
+.wd-home-hr {
+  border-bottom: solid 1px rgb(110, 118, 125);
+}
+
+.wd-home-img {
+  object-fit: cover;
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.wd-home-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 5px 10px 5px;
+}
+
+.wd-home-button {
+  border: none;
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-home-preview-img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.wd-home-preview-post {
+  border-top: none;
+  padding: 5px;
+}
+
+.wd-home-preview-title {
+}
+
+.wd-home-post {
+  display: flex;
+  justify-content: left;
+}
+
+.wd-home-username {
+  display: inline-block;
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+  padding-bottom: 3px;
+  padding-top: 5px;
+}
+
+.wd-home-text {
+  padding-bottom: 3px;
+  padding-top: 5px;
+}
+
+.wd-home-author {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.wd-home-time {
+  display: inline-block;
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-main {
+  position: relative;
+}
+
+.wd-main-image {
+  width: 100%
+}
+
+.wd-overlay-text {
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0px;
+  left: 2px;
+}
+
+.wd-post {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wd-post-topic {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+.wd-author-handle {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.wd-time {
+  display: inline-block;
+  color: rgb(110, 118, 125);
+}
+
+.wd-post-image {
+  object-fit: cover;
+  float: right;
+  padding-top: 5px;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.wd-img-avatar {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.wd-btn-follow {
+  font-size: 13px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+.wd-search-area {
+  padding-left: 50px;
+}
+
+.wd-search-glass {
+  position: absolute;
+  margin-left: 15px;
+  top: 45px;
+}
