@@ -87,6 +87,7 @@
 .wd-home-post {
   display: flex;
   justify-content: left;
+  flex: 0 0 100%;
 }
 
 .wd-home-username {
