@@ -1,18 +1,15 @@
 import React from "react";
-import { deleteTuit } from "../tuits/tuits-reducer";
+import PostStats from "./post-stats";
+import { deleteTuitThunk } from "../../services/tuits-thunks";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 const PostItem = ({ post }) => {
-  const postsArray = useSelector((state) => state.tuits);
+  const { tuits } = useSelector((state) => state.tuitsData);
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   };
 
-  var likedClassName = "bi bi-heart";
-  if (post.liked === true) {
-    likedClassName = "bi bi-heart-fill";
-  }
   switch (post.category) {
     case 1:
       return (
@@ -36,20 +33,7 @@ const PostItem = ({ post }) => {
               <div>
                 <img className="img-fluid rounded" src={`${post.preview}`} />
               </div>
-              <div className="wd-home-buttons">
-                <button className="wd-home-button bg-transparent">
-                  <i className="bi bi-chat"></i> {post.comment}
-                </button>
-                <button className="wd-home-button bg-transparent">
-                  <i className="bi bi-share"></i> {post.retuit}
-                </button>
-                <button className="wd-home-button bg-transparent">
-                  <i className={likedClassName}></i> {post.like}
-                </button>
-                <button className="wd-home-button bg-transparent">
-                  <i className="bi bi-upload"></i>
-                </button>
-              </div>
+              <PostStats post={post}/>
             </div>
           </div>
         </div>
@@ -93,26 +77,13 @@ const PostItem = ({ post }) => {
                   </div>
                 </div>
               </div>
-              <div className="wd-home-buttons">
-                <button className="wd-home-button bg-transparent">
-                  <i className="bi bi-chat"></i> {post.comment}
-                </button>
-                <button className="wd-home-button bg-transparent">
-                  <i className="bi bi-share"></i> {post.retuit}
-                </button>
-                <button className="wd-home-button bg-transparent">
-                  <i className={likedClassName}></i> {post.like}
-                </button>
-                <button className="wd-home-button bg-transparent">
-                  <i className="bi bi-upload"></i>
-                </button>
-              </div>
+              <PostStats post={post}/>
             </div>
           </div>
         </div>
       );
     case 3:
-      var rpost = postsArray.filter(function (_data) {
+      var rpost = tuits.filter(function (_data) {
         return _data._id === post.retweetId;
       });
       if (rpost.length === 0) {
@@ -135,28 +106,16 @@ const PostItem = ({ post }) => {
                 <br />
                 <div className="wd-home-text">{post.text}</div>
                 <div className="bg-transparent m-3">
-                  <span className="text-secondary fw-light border border-2 rounded p-2">The post has been deleted!</span>
+                  <span className="text-secondary fw-light border border-2 rounded p-2">
+                    The post has been deleted!
+                  </span>
                 </div>
-                <div className="wd-home-buttons pt-2">
-                  <button className="wd-home-button bg-transparent">
-                    <i className="bi bi-chat"></i> {post.comment}
-                  </button>
-                  <button className="wd-home-button bg-transparent">
-                    <i className="bi bi-share"></i> {post.retuit}
-                  </button>
-                  <button className="wd-home-button bg-transparent">
-                    <i className={likedClassName}></i> {post.like}
-                  </button>
-                  <button className="wd-home-button bg-transparent">
-                    <i className="bi bi-upload"></i>
-                  </button>
-                </div>
+                <PostStats post={post}/>
               </div>
             </div>
           </div>
         );
       }
-      console.info(rpost)
       return (
         <div className="list-group-item rounded">
           <i
@@ -178,20 +137,7 @@ const PostItem = ({ post }) => {
               <div className="bg-transparent">
                 <PostItem post={rpost[0]} />
               </div>
-              <div className="wd-home-buttons">
-                <button className="wd-home-button bg-transparent">
-                  <i className="bi bi-chat"></i> {post.comment}
-                </button>
-                <button className="wd-home-button bg-transparent">
-                  <i className="bi bi-share"></i> {post.retuit}
-                </button>
-                <button className="wd-home-button bg-transparent">
-                  <i className={likedClassName}></i> {post.like}
-                </button>
-                <button className="wd-home-button bg-transparent">
-                  <i className="bi bi-upload"></i>
-                </button>
-              </div>
+              <PostStats post={post}/>
             </div>
           </div>
         </div>
@@ -215,20 +161,7 @@ const PostItem = ({ post }) => {
               <div className="wd-home-time">- {post.time}</div>
               <br />
               <div className="wd-home-text">{post.text}</div>
-              <div className="wd-home-buttons">
-                <button className="wd-home-button bg-transparent">
-                  <i className="bi bi-chat"></i> {post.comment}
-                </button>
-                <button className="wd-home-button bg-transparent">
-                  <i className="bi bi-share"></i> {post.retuit}
-                </button>
-                <button className="wd-home-button bg-transparent">
-                  <i className={likedClassName}></i> {post.like}
-                </button>
-                <button className="wd-home-button bg-transparent">
-                  <i className="bi bi-upload"></i>
-                </button>
-              </div>
+              <PostStats post={post}/>
             </div>
           </div>
         </div>

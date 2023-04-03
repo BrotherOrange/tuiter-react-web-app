@@ -15,7 +15,9 @@
     "comment": "4.2K",
     "retuit": "3.5K",
     "liked": true,
-    "like": "37.5K"
+    "like": 3750,
+    "disliked": false,
+    "dislike": 1025
   },
   {
     "_id": 234,
@@ -33,7 +35,9 @@
     "comment": "4.2K",
     "retuit": "3.5K",
     "liked": false,
-    "like": "37.5K"
+    "like": 2560,
+    "disliked": true,
+    "dislike": 125
   },
   {
     "_id": 345,
@@ -49,7 +53,9 @@
     "comment": "5,346",
     "retuit": "1,601",
     "liked": false,
-    "like": "19.2K"
+    "like": 1980,
+    "disliked": false,
+    "dislike": 32
   },
   {
     "_id": 456,
@@ -67,6 +73,8 @@
     "comment": "965",
     "retuit": "2.4K",
     "liked": true,
-    "like": "4K"
+    "like": 4030,
+    "disliked": false,
+    "dislike": 102
   }
 ]
