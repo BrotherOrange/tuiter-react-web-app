@@ -10,6 +10,7 @@ const profileSlice = createSlice({
       state.bio = action.payload.bio;
       state.location = action.payload.location;
       state.dateOfBirth = action.payload.dateOfBirth;
+      state.website = action.payload.website;
     },
   },
 });

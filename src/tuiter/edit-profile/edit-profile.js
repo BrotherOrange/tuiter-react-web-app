@@ -74,7 +74,7 @@ const EditProfile = () => {
           <input
             id="website"
             value={whatWebsite}
-            type="text"
+            type="url"
             placeholder="What's your personal website?"
             className="form-control border-0"
             onChange={(event) => setWhatWebsite(event.target.value)}>
