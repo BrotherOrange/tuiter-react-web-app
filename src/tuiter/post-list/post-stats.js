@@ -4,7 +4,6 @@ import { useDispatch } from "react-redux";
 
 const PostStats = (post) => {
   const dispatch = useDispatch();
-  console.log(post)
   return (
     <div className="wd-home-buttons">
       <button className="wd-home-button bg-transparent">
